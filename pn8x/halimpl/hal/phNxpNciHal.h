@@ -179,6 +179,8 @@ int phNxpNciHal_check_ncicmd_write_window(uint16_t cmd_len, uint8_t* p_cmd);
 void phNxpNciHal_request_control(void);
 void phNxpNciHal_release_control(void);
 int phNxpNciHal_write_unlocked(uint16_t data_len, const uint8_t* p_data);
+NFCSTATUS phNxpNciHal_core_reset_recovery();
+void phNxpNciHal_discovery_cmd_ext(uint8_t* p_cmd_data, uint16_t cmd_len);
 /*******************************************************************************
 **
 ** Function         phNxpNciHal_configFeatureList
